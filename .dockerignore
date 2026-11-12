@@ -1,0 +1,13 @@
+.git
+.gitignore
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+*.md
+*.egg-info
+__pycache__
+*.pyc
+.venv
+node_modules
+*.log
+*.tmp

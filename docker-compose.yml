@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  guardian:
+    build: .
+    container_name: system-guardian
+    restart: unless-stopped
+    volumes:
+      - /proc:/proc:ro
+      - /var/log/guardian:/var/log/guardian
+      - /var/lib/guardian:/var/lib/guardian
+    environment:
+      - GUARDIAN_INTERVAL=30
+    command: ["daemon", "30"]
